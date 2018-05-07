@@ -1,5 +1,6 @@
 package kr.co.teaming.www.teaming;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import kr.co.teaming.www.teaming.study.StudyFragment;
+
+public class MainActivity extends AppCompatActivity implements StudyFragment.OnFragmentInteractionListener, MatchingFragment.OnFragmentInteractionListener, MyStudyFragment.OnFragmentInteractionListener, NoticeFragment.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -75,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        //study
+    }
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -92,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             Fragment fragment = null;
             switch (position) {
                 case 0:
-                    fragment = StudyFragment.newInstance("param1", "param2");
+                    fragment = StudyFragment.newInstance("user");
                     break;
                 case 1:
                     fragment = MatchingFragment.newInstance("param1", "param2");

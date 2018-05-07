@@ -7,4 +7,12 @@
     <string name="tab_text_4">공지사항</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="more_item_text">더보기</string>
+
+    <!--스터디 탭 문자열-->
+    <string name="study_search_text">스터디 검색</string>
+    <string name="study_clipping_list_text">찜 리스트</string>
+    <string name="study_district_list_text">지역별 리스트</string>
+    <string name="study_category_list_text">분야별 리스트</string>
+
 </resources>

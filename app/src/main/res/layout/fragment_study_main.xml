@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_additional_margin"
+        android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+        android:layout_marginTop="@dimen/study_list_text_margin_top"
+        android:textSize="@dimen/default_text_size"
+        android:text="@string/study_district_list_text"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/study_region_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_additional_margin"
+        android:layout_marginEnd="@dimen/default_additional_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_additional_margin"
+        android:layout_gravity="end"
+        android:text="@string/more_item_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_additional_margin"
+        android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+        android:layout_marginTop="@dimen/study_list_text_margin_top"
+        android:textSize="@dimen/default_text_size"
+        android:text="@string/study_category_list_text"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/study_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_additional_margin"
+        android:layout_marginEnd="@dimen/default_additional_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_additional_margin"
+        android:layout_gravity="end"
+        android:text="@string/more_item_text"
+        />
+
+</LinearLayout>
