@@ -5,6 +5,7 @@
     <string name="tab_text_2">매칭</string>
     <string name="tab_text_3">마이스터디</string>
     <string name="tab_text_4">공지사항</string>
+    <string name="tab_text_5">쪽지</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="more_item_text">더보기</string>

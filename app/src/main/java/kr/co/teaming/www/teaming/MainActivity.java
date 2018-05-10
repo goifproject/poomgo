@@ -15,7 +15,12 @@ import android.view.MenuItem;
 
 import kr.co.teaming.www.teaming.study.StudyFragment;
 
-public class MainActivity extends AppCompatActivity implements StudyFragment.OnFragmentInteractionListener, MatchingFragment.OnFragmentInteractionListener, MyStudyFragment.OnFragmentInteractionListener, NoticeFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity
+        implements StudyFragment.OnFragmentInteractionListener,
+        MatchingFragment.OnFragmentInteractionListener,
+        MyStudyFragment.OnFragmentInteractionListener,
+        NoticeFragment.OnFragmentInteractionListener,
+        MessageFragment.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -111,14 +116,17 @@ public class MainActivity extends AppCompatActivity implements StudyFragment.OnF
                 case 3:
                     fragment = NoticeFragment.newInstance("param1", "param2");
                     break;
+                case 4:
+                    fragment = MessageFragment.newInstance("param1", "param2");
+                    break;
             }
             return fragment;
         }
 
         @Override
         public int getCount() {
-            // Show 4 total pages.
-            return 4;
+            // Show 5 total pages.
+            return 5;
         }
     }
 }
