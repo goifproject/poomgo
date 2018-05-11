@@ -4,6 +4,7 @@
     android:layout_width="@dimen/clipping_card_size"
     android:layout_height="@dimen/clipping_card_size"
     android:layout_marginEnd="@dimen/default_half_margin"
+    android:layout_marginStart="@dimen/default_small_margin"
     >
 
     <RelativeLayout
