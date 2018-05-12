@@ -17,4 +17,33 @@
     <string name="study_district_list_text">지역별 리스트</string>
     <string name="study_category_list_text">분야별 리스트</string>
 
+    <!-- 스터디 상세정보 화면 -->
+
+    <string name="study_details_title">강남역\n토익스피킹</string>
+    <string name="study_details_period">모집기간 : 2018 . 04. 01 - 2018. 05. 01</string>
+
+    <string name="study_introduce_title">스터디 소개</string>
+    <string name="study_introduce">아마 스터디를 고민하시는 분들 중에서 3~4명이 모여서 한 공간에서 수업을 하면 말하기 시험공부인데 방해되거나 집중이 잘 안되지 않을까 하시는 분들도 계실 텐데요. 토익 스피킹 시험을 보신분들은 아실 테지만 시험 보러 가면 시험장에 많은 수험자들이 동시에 말을 하는 거 아시죠?
+공부한다 하고 조용한 곳에서 혼자 연습하다가 시험장 갔는데 여러명이 동시에 말하는 모습을 보면 멘붕입니다!
+하지만 소그룹으로 진행되는 스터디이니 이점은 걱정 안 하셔도 됩니다!
+그리고 말하기 연습한 것에 대해 피드백은 어떻게 드리냐구요?
+그부분도 걱정마세요. 스터디 중 실전문제 연습을 하실 때 본인 핸드폰에 음성 녹음기를 사용하여 녹음파일을 제가 받아 개별로 피드백 꼼꼼하게 보내드릴 예정입니다.
+스터디 참여하시고 싶은 분들은
+공부하고픈 열정만
+부끄럼없이 말하고 재미있고 공부할 마음만
+준비하셔서 오시면 됩니다</string>
+
+    <string name="study_info_title">상세 정보</string>
+    <string name="study_info_period">2018. 04. 01 - 2018. 05. 01</string>
+    <string name="study_info_area">서울. 강남역</string>y
+    <string name="study_info_category">외국어</string>
+    <string name="study_info_time">주 3회, 오후 6시 - 9시</string>
+    <string name="study_info_age">20대</string>
+    <string name="study_info_persons">1명 - 5명</string>
+
+    <string name="study_details_text_team_reader">팀장 : 홍길동</string>
+    <string name="study_details_text_team_reader_intro">팀장소개 공겹가자구요 곱창먹고싶다</string>
+
+    <string name="study_details_btn_apply">신청하기</string>
+
 </resources>

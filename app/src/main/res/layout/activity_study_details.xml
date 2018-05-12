@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/backgroundColor"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background">
+
+            <RelativeLayout
+                android:id="@+id/study_details_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/study_details_title_layout"
+                android:layout_marginLeft="@dimen/study_details_left_margin"
+                android:background="@color/cardview_light_background"
+                >
+
+                <ImageView
+                    android:id="@+id/study_details_title_image"
+                    android:layout_width="@dimen/study_details_title_picture"
+                    android:layout_height="@dimen/study_details_title_picture"
+                    android:layout_marginTop="@dimen/study_details_title_picture_top_margin"
+                    android:src="@drawable/testimage" />
+
+                <ImageButton
+                    android:layout_width="@dimen/study_details_image_button_width"
+                    android:layout_height="@dimen/study_details_image_button_height"
+                    android:layout_marginLeft="@dimen/study_details_image_button_margin_left"
+                    android:layout_marginTop="@dimen/study_details_image_button_margin_top"
+                    android:background="@color/cardview_dark_background" />
+
+                <TextView
+                    android:layout_width="@dimen/study_details_title_width"
+                    android:layout_height="@dimen/study_details_title_height"
+                    android:layout_marginLeft="@dimen/study_details_title_margin_left"
+                    android:layout_marginTop="@dimen/study_details_title_margin_top"
+                    android:text="@string/study_details_title"
+                    android:textSize="@dimen/study_details_title_text_size" />
+
+                <TextView
+                    android:layout_width="@dimen/study_details_period_text_width"
+                    android:layout_height="@dimen/study_details_period_text_height"
+                    android:layout_marginLeft="@dimen/study_details_period_text_margin_left"
+                    android:layout_marginTop="@dimen/study_details_period_text_margin_top"
+                    android:text="@string/study_details_period"
+                    android:textSize="@dimen/study_details_period_text_size" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/study_details_section_line"
+                android:layout_below="@id/study_details_title_layout"
+                android:background="@color/section_line_color"></View>
+
+            <RelativeLayout
+                android:layout_width="@dimen/study_introduce_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginLeft="@dimen/study_details_left_margin"
+                android:id="@+id/study_introduce_layout"
+                >
+
+                <TextView
+                    android:id="@+id/study_introduce_title"
+                    android:layout_width="@dimen/study_introduce_title_width"
+                    android:layout_height="@dimen/study_introduce_title_height"
+                    android:layout_marginTop="@dimen/study_introduce_title_margin_top"
+                    android:text="@string/study_introduce_title"
+                    android:textSize="@dimen/study_introduce_title_text_size" />
+
+                <TextView
+                    android:id="@+id/study_introduce"
+                    android:layout_width="@dimen/study_introduce_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/study_introduce_title"
+                    android:layout_marginTop="@dimen/study_introduce_margin_top"
+                    android:maxLines="17"
+                    android:text="@string/study_introduce"
+                    android:textSize="@dimen/study_introduce_text_size" />
+
+                <TextView
+                    android:id="@+id/study_info_title"
+                    android:layout_width="@dimen/study_introduce_title_width"
+                    android:layout_height="@dimen/study_introduce_title_height"
+                    android:layout_below="@+id/study_introduce"
+                    android:layout_marginTop="@dimen/study_info_margin_top"
+                    android:text="@string/study_info_title"
+                    android:textSize="@dimen/study_introduce_text_size" />
+
+                <GridLayout
+                    android:layout_width="@dimen/study_info_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/study_info_title"
+                    android:columnCount="2"
+                    android:id="@+id/study_info_layout"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_period"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_area"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_category"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_time"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_age"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/study_info_image_width_height"
+                        android:layout_height="@dimen/study_info_image_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_image_margin_left"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="@dimen/study_info_text_width"
+                        android:layout_height="@dimen/study_info_text_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/study_info_text_margin_left"
+                        android:text="@string/study_info_persons"
+                        android:textSize="@dimen/study_info_text_size"
+                        />
+
+                </GridLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/study_details_person_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/study_derails_person_layout_height"
+                android:layout_marginLeft="@dimen/study_details_left_margin"
+                android:background="@color/cardview_light_background"
+                android:layout_below="@+id/study_introduce_layout"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/study_details_person_image_width_height"
+                    android:layout_height="@dimen/study_details_person_image_width_height"
+                    android:src="@drawable/testimage"
+                    android:layout_marginTop="@dimen/study_details_person_image_margin_top"
+                    android:layout_marginLeft="@dimen/study_details_person_image_margin_left"
+                    android:id="@+id/study_details_person_image"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/study_details_person_text_team_reader_width"
+                    android:layout_height="@dimen/study_details_person_text_team_reader_height"
+                    android:layout_marginTop="@dimen/study_details_person_text_team_reader_margin_top"
+                    android:layout_marginLeft="@dimen/study_details_person_text_team_reader_margin_left"
+                    android:text="@string/study_details_text_team_reader"
+                    android:textSize="@dimen/study_details_person_text_reader_intro_size"
+                    />
+                <TextView
+                    android:layout_width="@dimen/study_details_person_text_reader_intro_width"
+                    android:layout_height="@dimen/study_details_person_text_reader_intro_height"
+                    android:layout_marginLeft="@dimen/study_details_person_text_reader_intro_margin_left"
+                    android:layout_marginTop="@dimen/study_details_person_text_reader_intro_margin_top"
+                    android:text="@string/study_details_text_team_reader_intro"
+                    android:textSize="@dimen/study_details_person_text_reader_intro_size"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/study_details_section_line"
+                android:background="@color/section_line_color"
+                android:id="@+id/line2"
+                android:layout_below="@+id/study_details_person_layout"
+                >
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/study_details_bottom_layout_height"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="@dimen/study_details_left_margin"
+                >
+
+                <Button
+                    android:layout_width="@dimen/study_details_apply_btn_width"
+                    android:layout_height="@dimen/study_details_apply_btn_height"
+                    android:layout_marginTop="@dimen/study_details_apply_btn_margin_top"
+                    android:background="@color/colorPrimary"
+                    android:textSize="@dimen/study_details_apply_btn_text_size"
+                    android:text="@string/study_details_btn_apply"
+                    android:textColor="@color/study_apply_btn_text_color"
+                    />
+
+                <ImageButton
+                    android:layout_width="@dimen/study_details_steamed_image_btn_width"
+                    android:layout_height="@dimen/study_details_steamed_image_btn_height"
+                    android:layout_marginTop="@dimen/study_details_steamed_image_btn_margin_top"
+                    android:layout_marginLeft="@dimen/study_details_steamed_image_btn_margin_left"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
