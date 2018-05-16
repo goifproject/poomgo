@@ -12,8 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import kr.co.teaming.www.teaming.common.TeamingApplication;
+import kr.co.teaming.www.teaming.common.TeamingRESTInterface;
+import kr.co.teaming.www.teaming.common.TeamingRESTfulWarmUp;
+import kr.co.teaming.www.teaming.models.StudyInfo;
 import kr.co.teaming.www.teaming.study.StudyFragment;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity
         implements StudyFragment.OnFragmentInteractionListener,
@@ -57,7 +65,22 @@ public class MainActivity extends AppCompatActivity
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
+        TeamingRESTInterface request = TeamingApplication.getTeamingRESTInterface(); //
+        Call<StudyInfo> call = request.studyInfo();
+        call.enqueue(new Callback<StudyInfo>() { // callback 함수.
+            @Override
+            public void onResponse(Call<StudyInfo> call, Response<StudyInfo> response) {
+                if(response.code() >= 200 || response.code() <= 400){
+                    StudyInfo studyInfo = response.body();
+                    Toast.makeText(MainActivity.this, studyInfo.total+"", Toast.LENGTH_SHORT).show();
+                }
+            }
 
+            @Override
+            public void onFailure(Call<StudyInfo> call, Throwable t) {
+
+            }
+        });
     }
 
 
