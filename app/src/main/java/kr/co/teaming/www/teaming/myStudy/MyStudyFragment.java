@@ -1,4 +1,4 @@
-package kr.co.teaming.www.teaming;
+package kr.co.teaming.www.teaming.myStudy;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import kr.co.teaming.www.teaming.R;
+import kr.co.teaming.www.teaming.StudyDetailsActivity;
 
 
 /**

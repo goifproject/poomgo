@@ -46,4 +46,7 @@
 
     <string name="study_details_btn_apply">신청하기</string>
 
+    <!-- 공지사항 탭 -->
+    <string name="notice_text_title">공지사항</string>
+
 </resources>

@@ -16,8 +16,9 @@ import android.widget.Toast;
 
 import kr.co.teaming.www.teaming.common.TeamingApplication;
 import kr.co.teaming.www.teaming.common.TeamingRESTInterface;
-import kr.co.teaming.www.teaming.common.TeamingRESTfulWarmUp;
 import kr.co.teaming.www.teaming.models.StudyInfo;
+import kr.co.teaming.www.teaming.myStudy.MyStudyFragment;
+import kr.co.teaming.www.teaming.notice.NoticeFragment;
 import kr.co.teaming.www.teaming.study.StudyFragment;
 import retrofit2.Call;
 import retrofit2.Callback;

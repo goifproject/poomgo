@@ -1,12 +1,18 @@
-package kr.co.teaming.www.teaming;
+package kr.co.teaming.www.teaming.notice;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import kr.co.teaming.www.teaming.R;
 
 
 /**
@@ -22,6 +28,8 @@ public class NoticeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    RecyclerView recyclerView;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -64,7 +72,26 @@ public class NoticeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notice, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_notice, container, false);
+
+        recyclerView = view.findViewById(R.id.fragment_notice_recyclerview);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+
+        NoticeFragmentAdapter adapter = new NoticeFragmentAdapter();
+
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+
+        adapter.setItemClick(new NoticeFragmentAdapter.ItemClick() {
+            @Override
+            public void onClick(View view, int position) {
+                Intent intent = new Intent(getActivity(), NoticeDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

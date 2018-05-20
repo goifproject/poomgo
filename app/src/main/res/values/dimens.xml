@@ -100,4 +100,49 @@
     <dimen name="study_details_steamed_image_btn_margin_top">15dp</dimen>
     <dimen name="study_details_steamed_image_btn_margin_left">296dp</dimen>
 
+    <!-- 공지사항 탭 -->
+
+        <!-- 공지사항 아이콘 -->
+    <dimen name="notice_icon_width">11.4dp</dimen>
+    <dimen name="notice_icon_height">10dp</dimen>
+    <dimen name="notice_icon_margin_top">22.5dp</dimen>
+    <dimen name="notice_icon_margin_left">25.3dp</dimen>
+
+        <!-- '공지사항' 글자 -->
+    <dimen name="notice_text_title_width">65dp</dimen>
+    <dimen name="notice_text_title_height">24dp</dimen>
+    <dimen name="notice_text_title_margin_top">15dp</dimen>
+    <dimen name="notice_text_title_margin_left">46dp</dimen>
+    <dimen name="notice_text_size">15sp</dimen>
+
+        <!-- 리싸이클러뷰 마진 -->
+    <dimen name="notice_recyclerview_margin_top">14.5dp</dimen>
+
+<!-- **************************************************************************************** -->
+
+    <!-- 공지사항 탭 리싸이클러뷰 아이템 -->
+
+        <!-- 리싸이클러뷰 아이템 레이아웃 -->
+
+    <dimen name="notice_recyclerview_item_layout_width">87dp</dimen>
+    <dimen name="notice_recyclerview_item_layout_margin">8dp</dimen>
+
+        <!-- 리싸이클러뷰 아이템 스터디 이름 텍스트 -->
+
+    <dimen name="notice_recyclerview_item_study_name_text_margin">13dp</dimen>
+    <dimen name="notice_recyclerview_item_study_name_text_size">14sp</dimen>
+
+        <!-- 리싸이클러뷰 아이템 시간/날짜 텍스트 -->
+
+    <dimen name="notice_recyclerview_item_date_text_margin">13dp</dimen>
+    <dimen name="notice_recyclerview_item_date_text_size">12sp</dimen>
+
+        <!-- 리싸이클러뷰 아이템 공지내용 텍스트 -->
+
+    <dimen name="notice_recyclerview_item_context_text_margin">13dp</dimen>
+    <dimen name="notice_recyclerview_item_context_text_margin_top">5dp</dimen>
+    <dimen name="notice_recyclerview_item_context_text_size">11sp</dimen>
+
+<!-- **************************************************************************************** -->
+
 </resources>

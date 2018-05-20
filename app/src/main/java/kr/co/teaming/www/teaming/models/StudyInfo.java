@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class StudyInfo implements Serializable {
 
     public int total;
-    public Result result;
+//    public Result result;
 
-    public class Result{
-        public int code;
-        public String msg;
-    } // 따로 클래스로 만들어라.
+//    public class Result{
+//        public int code;
+//        public String msg;
+//    } // 따로 클래스로 만들어라.
 
     public ArrayList<Data> datas = new ArrayList<>();
 
