@@ -49,4 +49,11 @@
     <!-- 공지사항 탭 -->
     <string name="notice_text_title">공지사항</string>
 
+    <!--매칭 탭 문자열-->
+    <string name="matching_search_text">팀원 검색</string>
+    <string name="matching_clipping_list_text">찜한 팀원</string>
+    <string name="matching_recommend_list_text">추천 팀원</string>
+    <string name="matching_district_list_text">지역별 팀원</string>
+    <string name="matching_category_list_text">분야별 팀원</string>
+
 </resources>

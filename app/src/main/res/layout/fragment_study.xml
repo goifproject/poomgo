@@ -1,26 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbars="vertical"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/study_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:elevation="2dp"
-        android:orientation="vertical"
-        tools:context=".controller.study.main.StudyFragment">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
 
-        <include layout="@layout/fragment_study_content_search" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            tools:context=".controller.study.main.StudyFragment">
 
-        <include layout="@layout/fragment_study_content_list1" />
+            <include layout="@layout/fragment_study_content_search" />
 
-        <include layout="@layout/fragment_study_content_list2" />
+            <include layout="@layout/fragment_study_content_list1" />
 
-    </LinearLayout>
+            <include layout="@layout/fragment_study_content_list2" />
 
-</android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/study_details_fab_size"
+        android:layout_height="@dimen/study_details_fab_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/study_details_fab_margin_end"
+        android:layout_marginBottom="@dimen/study_details_fab_margin_bottom"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_anchor="@id/study_scrollview"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="kr.co.teaming.www.teaming.custom.ScrollAwareFabBehavior"/>
+
+</RelativeLayout>

@@ -2,6 +2,8 @@ package kr.co.teaming.www.teaming.controller.study.main;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +18,7 @@ import kr.co.teaming.www.teaming.controller.study.main.adapter.StudyByCategoryLi
 import kr.co.teaming.www.teaming.controller.study.main.adapter.StudyByRegionListAdapter;
 import kr.co.teaming.www.teaming.controller.study.main.adapter.StudyFavoriteListAdapter;
 import kr.co.teaming.www.teaming.controller.study.main.adapter.StudyRecommendListAdapter;
+import kr.co.teaming.www.teaming.custom.ScrollAwareFabBehavior;
 
 public class StudyFragment extends Fragment {
 
@@ -71,7 +74,6 @@ public class StudyFragment extends Fragment {
         studyByCategoryRecyclerView = (RecyclerView) view.findViewById(R.id.studyByCategoryRecyclerView);
         studySearchInput = (EditText) view.findViewById(R.id.study_search_input);
     }
-
 
 
     private void setFavoriteRecycler() {
@@ -169,6 +171,13 @@ public class StudyFragment extends Fragment {
 //        });
         studyByCategoryRecyclerView.setLayoutManager(llm);
     }
+
+//    private void setFAB() {
+//        FloatingActionButton fab =  view.findViewById(R.id.fab);
+//        CoordinatorLayout.LayoutParams p = (CoordinatorLayout.LayoutParams) fab.getLayoutParams();
+//        p.setBehavior(new ScrollAwareFabBehavior());
+//        fab.setLayoutParams(p);
+//    }
 
     @Override
     public void onAttach(Context context) {

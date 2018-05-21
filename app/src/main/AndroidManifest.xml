@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".controller.MainActivity"
+            android:name=".controller.main.MainActivity"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -25,7 +25,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".controller.study.detail.StudyDetailActivity" />
-        <activity android:name=".controller.notice.NoticeDetailsActivity"></activity>
+        <activity android:name=".controller.notice.NoticeDetailsActivity" />
+        <activity android:name=".controller.matching.detail.MatchingDetailActivity"></activity>
     </application>
 
 </manifest>

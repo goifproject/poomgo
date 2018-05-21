@@ -6,23 +6,24 @@
     android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:elevation="2dp"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    tools:context=".controller.study.main.StudyFragment">
 
     <TextView
-        android:id="@+id/matching_search_text"
+        android:id="@+id/study_search_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_additional_margin"
         android:layout_marginTop="@dimen/default_additional_margin"
-        android:text="@string/study_search_text"
+        android:text="@string/matching_search_text"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/default_text_size" />
 
     <android.support.v7.widget.CardView
-        android:id="@+id/matching_search_card"
+        android:id="@+id/study_search_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/matching_search_text"
+        android:layout_below="@+id/study_search_text"
         android:layout_marginStart="@dimen/default_additional_margin"
         android:layout_marginTop="@dimen/default_half_margin"
         android:layout_marginEnd="@dimen/default_additional_margin"
@@ -30,7 +31,7 @@
         app:cardElevation="@dimen/default_small_margin">
 
         <EditText
-            android:id="@+id/matching_search_input"
+            android:id="@+id/study_search_input"
             android:layout_width="match_parent"
             android:layout_height="@dimen/study_search_input_height"
             android:paddingLeft="8dp"
@@ -42,10 +43,10 @@
     </android.support.v7.widget.CardView>
 
     <Button
-        android:id="@+id/matching_search_detail"
+        android:id="@+id/study_search_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/matching_search_card"
+        android:layout_below="@+id/study_search_card"
         android:layout_marginStart="@dimen/default_additional_margin"
         android:background="@android:color/transparent"
         android:drawableStart="@drawable/ic_tune"

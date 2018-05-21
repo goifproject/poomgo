@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="19dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/matching_clip_thumbnail"
+        android:layout_width="@dimen/matching_clip_image_size"
+        android:layout_height="@dimen/matching_clip_image_size"
+        android:src="@drawable/testimage"/>
+
+    <TextView
+        android:id="@+id/matching_clip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_dark"
+        android:layout_marginTop="9dp"
+        android:textSize="13sp"
+        android:text="정블라디미르 (25, 여)" />
+
+    <TextView
+        android:id="@+id/matching_clip_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_dark"
+        android:textSize="10sp"
+        android:text="인천 계양구, 프리랜서 디자이너" />
+
+</LinearLayout>

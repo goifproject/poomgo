@@ -32,6 +32,9 @@
     <dimen name="study_details_share_margin_top">22dp</dimen>
     <dimen name="study_details_favorite_padding">15dp</dimen>
     <dimen name="study_details_favorite_bottom_margin">16dp</dimen>
+    <dimen name="study_details_fab_margin_end">16dp</dimen>
+    <dimen name="study_details_fab_margin_bottom">64dp</dimen>
+    <dimen name="study_details_fab_size">56dp</dimen>
 
     <dimen name="study_details_description_margin_end">21dp</dimen>
 
@@ -119,6 +122,9 @@
     <dimen name="study_details_steamed_image_btn_height">48dp</dimen>
     <dimen name="study_details_steamed_image_btn_margin_top">15dp</dimen>
     <dimen name="study_details_steamed_image_btn_margin_right">16dp</dimen>
+
+    <!-- 팀원 -->
+    <dimen name="matching_clip_image_size">50dp</dimen>
 
     <!-- 공지사항 탭 -->
 
