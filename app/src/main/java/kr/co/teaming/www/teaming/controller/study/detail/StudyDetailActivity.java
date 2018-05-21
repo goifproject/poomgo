@@ -1,4 +1,4 @@
-package kr.co.teaming.www.teaming.controller.study;
+package kr.co.teaming.www.teaming.controller.study.detail;
 
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.ShapeDrawable;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import kr.co.teaming.www.teaming.R;
 
-public class StudyDetailsActivity extends AppCompatActivity {
+public class StudyDetailActivity extends AppCompatActivity {
     ImageView study_details_title_image;
     ImageView study_details_person_image;
 

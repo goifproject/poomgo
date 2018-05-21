@@ -27,13 +27,13 @@
             android:textSize="@dimen/default_text_size" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/study_region_list"
+            android:id="@+id/studyByRegionRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/study_region_list_text"
-            tools:itemCount="6"
+            tools:itemCount="7"
             tools:layoutManager="android.support.v7.widget.GridLayoutManager"
-            tools:listitem="@layout/item_region_list"
+            tools:listitem="@layout/item_region"
             tools:spanCount="3" />
 
         <TextView
@@ -69,7 +69,7 @@
             android:textSize="@dimen/default_text_size" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/study_category_list"
+            android:id="@+id/studyByCategoryRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/study_category_list_text"

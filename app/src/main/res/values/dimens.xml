@@ -9,7 +9,9 @@
     <dimen name="default_additional_margin">24dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
-    <dimen name="toolbar_icon_size">24dp</dimen>
+    <dimen name="toolbar_icon_size">32dp</dimen>
+    <dimen name="toolbar_icon_margin_top">13dp</dimen>
+
 
     <!--스터디화면-->
     <dimen name="study_search_input_height">42dp</dimen>
@@ -19,7 +21,7 @@
     <dimen name="clipping_card_text_background_height">30dp</dimen>
     <dimen name="study_list2_margin_start">31dp</dimen>
     <dimen name="study_list2_margin_end">16dp</dimen>
-    <dimen name="study_item_list2_padding">8dp</dimen>
+    <dimen name="study_item_list2_padding">17dp</dimen>
 
     <!-- 스터디 상세정보 화면 -->
 
@@ -28,12 +30,15 @@
     <dimen name="study_details_period_margin_bottom">14dp</dimen>
     <dimen name="study_details_share_margin_end">21dp</dimen>
     <dimen name="study_details_share_margin_top">22dp</dimen>
+    <dimen name="study_details_favorite_padding">15dp</dimen>
+    <dimen name="study_details_favorite_bottom_margin">16dp</dimen>
 
     <dimen name="study_details_description_margin_end">21dp</dimen>
 
     <dimen name="study_details_title_layout">129dp</dimen>
     <dimen name="study_details_title_picture">93dp</dimen>
     <dimen name="study_details_left_margin">16dp</dimen>
+    <dimen name="study_details_right_margin">6dp</dimen>
     <dimen name="study_details_title_picture_top_margin">22dp</dimen>
 
     <dimen name="study_details_title_width">165dp</dimen>
@@ -73,7 +78,7 @@
 
     <dimen name="study_info_period_margin_top">8dp</dimen>
 
-    <dimen name="study_info_image_width_height">11dp</dimen>
+    <dimen name="study_info_image_width_height">24dp</dimen>
     <dimen name="study_info_image_margin_left">2dp</dimen>
     <dimen name="study_info_image_margin_top">2dp</dimen>
 
@@ -103,7 +108,7 @@
     <dimen name="study_details_person_text_reader_intro_margin_left">15dp</dimen>
     <dimen name="study_details_person_text_reader_intro_margin_end">30dp</dimen>
     <dimen name="study_details_person_text_reader_intro_margin_bottom">37dp</dimen>
-    <dimen name="study_details_person_text_reader_intro_size">13p</dimen>
+    <dimen name="study_details_person_text_reader_intro_size">13sp</dimen>
 
     <dimen name="study_details_apply_btn_width">274dp</dimen>
     <dimen name="study_details_apply_btn_height">48dp</dimen>
@@ -113,7 +118,7 @@
     <dimen name="study_details_steamed_image_btn_width">48dp</dimen>
     <dimen name="study_details_steamed_image_btn_height">48dp</dimen>
     <dimen name="study_details_steamed_image_btn_margin_top">15dp</dimen>
-    <dimen name="study_details_steamed_image_btn_margin_left">6dp</dimen>
+    <dimen name="study_details_steamed_image_btn_margin_right">16dp</dimen>
 
     <!-- 공지사항 탭 -->
 

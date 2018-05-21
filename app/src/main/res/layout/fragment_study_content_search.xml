@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:elevation="2dp"
-    tools:context=".controller.study.StudyFragment">
+    android:focusableInTouchMode="true"
+    tools:context=".controller.study.main.StudyFragment">
 
     <TextView
         android:id="@+id/study_search_text"
@@ -27,15 +28,16 @@
         android:layout_marginTop="@dimen/default_half_margin"
         android:layout_marginEnd="@dimen/default_additional_margin"
         android:background="@android:color/white"
-        app:cardElevation="@dimen/default_half_margin">
+        app:cardElevation="@dimen/default_small_margin">
 
         <EditText
             android:id="@+id/study_search_input"
             android:layout_width="match_parent"
             android:layout_height="@dimen/study_search_input_height"
+            android:paddingLeft="8dp"
             android:background="@android:color/transparent"
             android:drawableEnd="@drawable/ic_search_black_24dp"
-            android:focusable="false"
+            android:paddingRight="4dp"
             android:inputType="text" />
 
     </android.support.v7.widget.CardView>
@@ -47,7 +49,7 @@
         android:layout_below="@+id/study_search_card"
         android:layout_marginStart="@dimen/default_additional_margin"
         android:background="@android:color/transparent"
-        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:drawableStart="@drawable/ic_tune"
         android:text="상세검색"
         android:textColor="@android:color/secondary_text_dark" />
 

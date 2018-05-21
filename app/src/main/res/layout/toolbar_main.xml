@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
@@ -20,11 +19,16 @@
             android:layout_centerInParent="true"
             android:text="@string/app_name" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="@dimen/toolbar_icon_size"
             android:layout_height="@dimen/toolbar_icon_size"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true" />
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/toolbar_icon_margin_top"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@drawable/button_profile"
+            android:padding="3dp"
+            app:srcCompat="@drawable/ic_person" />
 
     </RelativeLayout>
 

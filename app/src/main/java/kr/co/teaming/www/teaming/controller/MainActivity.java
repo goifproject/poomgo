@@ -1,5 +1,7 @@
 package kr.co.teaming.www.teaming.controller;
 
+import android.content.Context;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,27 +11,22 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 
 import kr.co.teaming.www.teaming.R;
-import kr.co.teaming.www.teaming.common.app.TeamingApplication;
-import kr.co.teaming.www.teaming.common.remote.TeamingRESTInterface;
 import kr.co.teaming.www.teaming.controller.matching.MatchingFragment;
 import kr.co.teaming.www.teaming.controller.message.MessageFragment;
-import kr.co.teaming.www.teaming.model.study.study.StudyInfo;
 import kr.co.teaming.www.teaming.controller.myStudy.MyStudyFragment;
 import kr.co.teaming.www.teaming.controller.notice.NoticeFragment;
-import kr.co.teaming.www.teaming.controller.study.StudyFragment;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import kr.co.teaming.www.teaming.controller.study.main.StudyFragment;
 
-public class MainActivity extends AppCompatActivity
-        implements StudyFragment.OnFragmentInteractionListener,
+public class MainActivity extends AppCompatActivity implements
         MatchingFragment.OnFragmentInteractionListener,
         MyStudyFragment.OnFragmentInteractionListener,
         NoticeFragment.OnFragmentInteractionListener,
@@ -59,31 +56,43 @@ public class MainActivity extends AppCompatActivity
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        TeamingRESTInterface request = TeamingApplication.getTeamingRESTInterface(); //
-        Call<StudyInfo> call = request.studyInfo();
-        call.enqueue(new Callback<StudyInfo>() { // callback 함수.
-            @Override
-            public void onResponse(Call<StudyInfo> call, Response<StudyInfo> response) {
-                if(response.code() >= 200 || response.code() <= 400){
-                    StudyInfo studyInfo = response.body();
-                    Toast.makeText(MainActivity.this, studyInfo.total+"", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<StudyInfo> call, Throwable t) {
-
-            }
-        });
+//        TeamingRESTInterface request = TeamingApplication.getTeamingRESTInterface(); //
+//        Call<StudyInfo> call = request.studyInfo();
+//        call.enqueue(new Callback<StudyInfo>() { // callback 함수.
+//            @Override
+//            public void onResponse(Call<StudyInfo> call, Response<StudyInfo> response) {
+//                if(response.code() >= 200 || response.code() <= 400){
+//                    StudyInfo studyInfo = response.body();
+//                    Toast.makeText(MainActivity.this, studyInfo.total+"", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<StudyInfo> call, Throwable t) {
+//
+//            }
+//        });
     }
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if(ev.getAction() == MotionEvent.ACTION_DOWN) {
+            View v = getCurrentFocus();
+            if(v instanceof EditText) {
+                Rect outRect = new Rect();
+                v.getGlobalVisibleRect(outRect);
+                if(!outRect.contains((int)ev.getRawX(), (int)ev.getRawY())) {
+                    v.clearFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                }
+            }
+        }
+        return super.dispatchTouchEvent(ev);
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controller.study.StudyDetailsActivity" />
+        <activity android:name=".controller.study.detail.StudyDetailActivity" />
         <activity android:name=".controller.notice.NoticeDetailsActivity"></activity>
     </application>
 

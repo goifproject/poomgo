@@ -4,7 +4,6 @@
     android:layout_width="@dimen/clipping_card_size"
     android:layout_height="@dimen/clipping_card_size"
     android:layout_marginStart="@dimen/default_half_margin"
-    android:layout_marginEnd="@dimen/default_half_margin"
     app:cardCornerRadius="4dp">
 
     <RelativeLayout
@@ -12,12 +11,13 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/clipping_item_thumbnail"
+            android:id="@+id/study_clip_thumbnail"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:src="@drawable/testimage"/>
 
         <TextView
-            android:id="@+id/clipping_item_name"
+            android:id="@+id/study_clip_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/clipping_card_text_background_height"
             android:layout_alignParentBottom="true"

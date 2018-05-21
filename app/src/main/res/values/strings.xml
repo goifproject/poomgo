@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">teaming</string>
+    <string name="app_name">Teaming</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="tab_text_1">TM</string>
     <string name="tab_text_2">팀원</string>

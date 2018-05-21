@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -9,10 +10,15 @@
         android:layout_height="wrap_content"
         android:background="@color/cardview_light_background">
 
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/toolbar_main" />
+
         <RelativeLayout
             android:id="@+id/study_details_title_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/include_toolbar"
             android:background="@color/cardview_light_background">
 
             <ImageView
@@ -23,13 +29,13 @@
                 android:layout_marginTop="@dimen/study_details_title_picture_top_margin"
                 android:src="@drawable/testimage" />
 
-            <ImageButton
-                android:layout_width="@dimen/study_details_image_button_width"
-                android:layout_height="@dimen/study_details_image_button_height"
+            <ImageView
+                android:layout_width="@dimen/study_info_image_width_height"
+                android:layout_height="@dimen/study_info_image_width_height"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/study_details_share_margin_top"
                 android:layout_marginRight="@dimen/study_details_share_margin_end"
-                android:background="@color/cardview_dark_background" />
+                app:srcCompat="@drawable/ic_share" />
 
             <TextView
                 android:id="@+id/study_title"
@@ -52,7 +58,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/study_title"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="@dimen/study_details_period_text_margin_left"
                 android:layout_marginTop="@dimen/study_details_period_text_margin_top"
                 android:layout_marginEnd="@dimen/study_details_period_margin_right"
                 android:layout_marginBottom="@dimen/study_details_period_margin_bottom"
@@ -98,13 +103,14 @@
                 android:layout_marginEnd="@dimen/study_details_description_margin_end"
                 android:lineSpacingExtra="@dimen/study_introduce_line_spacing"
                 android:maxLines="20"
+                android:breakStrategy="balanced"
                 android:text="@string/study_introduce"
                 android:textColor="@color/color_text_dark"
                 android:textSize="@dimen/study_introduce_text_size" />
 
             <TextView
                 android:id="@+id/study_info_title"
-                android:layout_width="@dimen/study_introduce_title_width"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/study_introduce_title_height"
                 android:layout_below="@+id/study_introduce"
                 android:layout_marginStart="@dimen/default_margin"
@@ -116,7 +122,7 @@
 
             <GridLayout
                 android:id="@+id/study_info_layout"
-                android:layout_width="@dimen/study_info_layout_width"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/study_info_title"
                 android:layout_marginStart="@dimen/default_margin"
@@ -128,10 +134,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/default_half_margin"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_refresh" />
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -146,10 +152,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/study_info_image_margin_top"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_location" />
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -164,10 +170,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/study_info_image_margin_top"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_search" />
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -182,10 +188,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/study_info_image_margin_top"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_schedule"/>
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -200,10 +206,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/study_info_image_margin_top"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_favorite"/>
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -218,10 +224,10 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_image_margin_left"
                     android:layout_marginTop="@dimen/study_info_image_margin_top"
-                    android:background="@color/cardview_dark_background" />
+                    app:srcCompat="@drawable/ic_refresh"/>
 
                 <TextView
-                    android:layout_width="@dimen/study_info_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/study_info_text_height"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/study_info_text_margin_left"
@@ -285,27 +291,35 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/study_details_bottom_layout_height"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/line2">
+
+            <ImageView
+                android:id="@+id/favorite_study"
+                android:layout_width="@dimen/study_details_steamed_image_btn_width"
+                android:layout_height="@dimen/study_details_steamed_image_btn_height"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/study_details_steamed_image_btn_margin_top"
+                android:layout_marginRight="@dimen/study_details_steamed_image_btn_margin_right"
+                android:background="@drawable/background_like_study"
+                android:padding="@dimen/study_details_favorite_padding"
+                app:srcCompat="@drawable/ic_favorite_unchecked" />
 
             <Button
                 android:id="@+id/register"
-                android:layout_width="@dimen/study_details_apply_btn_width"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/study_details_apply_btn_height"
-                android:layout_marginTop="@dimen/study_details_apply_btn_margin_top"
                 android:layout_marginLeft="@dimen/study_details_left_margin"
-                android:background="@color/colorPrimary"
+                android:layout_marginTop="@dimen/study_details_apply_btn_margin_top"
+                android:layout_marginRight="@dimen/study_details_right_margin"
+                android:layout_marginBottom="@dimen/study_details_favorite_bottom_margin"
+                android:layout_toLeftOf="@id/favorite_study"
+                android:background="@drawable/button_favorite_study"
                 android:text="@string/study_details_btn_apply"
-                android:textStyle="bold"
                 android:textColor="@color/study_apply_btn_text_color"
-                android:textSize="@dimen/study_details_apply_btn_text_size" />
+                android:textSize="@dimen/study_details_apply_btn_text_size"
+                android:textStyle="bold" />
 
-            <Button
-                android:layout_width="@dimen/study_details_steamed_image_btn_width"
-                android:layout_height="@dimen/study_details_steamed_image_btn_height"
-                android:layout_toEndOf="@id/register"
-                android:layout_marginLeft="@dimen/study_details_steamed_image_btn_margin_left"
-                android:layout_marginTop="@dimen/study_details_steamed_image_btn_margin_top" />
 
         </RelativeLayout>
 
