@@ -10,4 +10,8 @@
     <color name="section_line_color">#d9d9d9</color>
     <color name="study_apply_btn_text_color">#ffffff</color>
 
+    <color name="color_text_dark">#000000</color>
+    <color name="color_study_detail_title">#813d32</color>
+    <color name="color_study_period">#000000</color>
+
 </resources>

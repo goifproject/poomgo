@@ -17,8 +17,19 @@
     <dimen name="study_list_text_margin_top">18dp</dimen>
     <dimen name="clipping_card_size">93dp</dimen>
     <dimen name="clipping_card_text_background_height">30dp</dimen>
+    <dimen name="study_list2_margin_start">31dp</dimen>
+    <dimen name="study_list2_margin_end">16dp</dimen>
+    <dimen name="study_item_list2_padding">8dp</dimen>
 
     <!-- 스터디 상세정보 화면 -->
+
+    <dimen name="study_details_title_margin_right">70dp</dimen>
+    <dimen name="study_details_period_margin_right">31dp</dimen>
+    <dimen name="study_details_period_margin_bottom">14dp</dimen>
+    <dimen name="study_details_share_margin_end">21dp</dimen>
+    <dimen name="study_details_share_margin_top">22dp</dimen>
+
+    <dimen name="study_details_description_margin_end">21dp</dimen>
 
     <dimen name="study_details_title_layout">129dp</dimen>
     <dimen name="study_details_title_picture">93dp</dimen>
@@ -39,7 +50,7 @@
     <dimen name="study_details_period_text_width">204dp</dimen>
     <dimen name="study_details_period_text_height">19dp</dimen>
     <dimen name="study_details_period_text_margin_left">125dp</dimen>
-    <dimen name="study_details_period_text_margin_top">96dp</dimen>
+    <dimen name="study_details_period_text_margin_top">3dp</dimen>
     <dimen name="study_details_period_text_size">12sp</dimen>
 
     <dimen name="study_details_section_line">1dp</dimen>
@@ -49,12 +60,13 @@
     <dimen name="study_introduce_title_width">243dp</dimen>
     <dimen name="study_introduce_title_height">17dp</dimen>
     <dimen name="study_introduce_title_margin_top">17dp</dimen>
-    <dimen name="study_introduce_title_text_size">13sp</dimen>
+    <dimen name="study_introduce_title_text_size">14sp</dimen>
 
     <dimen name="study_introduce_width">323dp</dimen>
     <dimen name="study_introduce_height">291dp</dimen>
     <dimen name="study_introduce_margin_top">8dp</dimen>
     <dimen name="study_introduce_text_size">12sp</dimen>
+    <dimen name="study_introduce_line_spacing">5sp</dimen>
 
     <dimen name="study_info_layout_width">186dp</dimen>
     <dimen name="study_info_margin_top">21dp</dimen>
@@ -63,6 +75,7 @@
 
     <dimen name="study_info_image_width_height">11dp</dimen>
     <dimen name="study_info_image_margin_left">2dp</dimen>
+    <dimen name="study_info_image_margin_top">2dp</dimen>
 
     <dimen name="study_info_text_width">165dp</dimen>
     <dimen name="study_info_text_height">19dp</dimen>
@@ -81,14 +94,16 @@
     <dimen name="study_details_person_text_team_reader_width">72dp</dimen>
     <dimen name="study_details_person_text_team_reader_height">19dp</dimen>
     <dimen name="study_details_person_text_team_reader_margin_top">30dp</dimen>
-    <dimen name="study_details_person_text_team_reader_margin_left">90dp</dimen>
+    <dimen name="study_details_person_text_team_reader_margin_left">15dp</dimen>
     <dimen name="study_details_person_text_team_reader_size">13dp</dimen>
 
     <dimen name="study_details_person_text_reader_intro_width">238dp</dimen>
     <dimen name="study_details_person_text_reader_intro_height">19dp</dimen>
     <dimen name="study_details_person_text_reader_intro_margin_top">49dp</dimen>
-    <dimen name="study_details_person_text_reader_intro_margin_left">90dp</dimen>
-    <dimen name="study_details_person_text_reader_intro_size">12sp</dimen>
+    <dimen name="study_details_person_text_reader_intro_margin_left">15dp</dimen>
+    <dimen name="study_details_person_text_reader_intro_margin_end">30dp</dimen>
+    <dimen name="study_details_person_text_reader_intro_margin_bottom">37dp</dimen>
+    <dimen name="study_details_person_text_reader_intro_size">13p</dimen>
 
     <dimen name="study_details_apply_btn_width">274dp</dimen>
     <dimen name="study_details_apply_btn_height">48dp</dimen>
@@ -98,7 +113,7 @@
     <dimen name="study_details_steamed_image_btn_width">48dp</dimen>
     <dimen name="study_details_steamed_image_btn_height">48dp</dimen>
     <dimen name="study_details_steamed_image_btn_margin_top">15dp</dimen>
-    <dimen name="study_details_steamed_image_btn_margin_left">296dp</dimen>
+    <dimen name="study_details_steamed_image_btn_margin_left">6dp</dimen>
 
     <!-- 공지사항 탭 -->
 

@@ -6,19 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".controller.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar_main"
-            />
+            layout="@layout/toolbar_main" />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
@@ -27,8 +25,7 @@
             app:tabSelectedTextColor="@color/colorPrimary"
             app:tabTextColor="@color/colorPrimary"
             app:tabBackground="@android:color/white"
-            app:tabIndicatorColor="@color/colorPrimary"
-            >
+            app:tabIndicatorColor="@color/colorPrimary">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem"
@@ -61,6 +58,7 @@
                 android:text="@string/tab_text_5" />
 
         </android.support.design.widget.TabLayout>
+
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager

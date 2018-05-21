@@ -6,7 +6,7 @@
 
     <!-- 어플리케이션 등록. 로드를 하기전에 실행이 된다. -->
     <application
-        android:name=".common.TeamingApplication"
+        android:name=".common.app.TeamingApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -24,8 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StudyDetailsActivity" />
-        <activity android:name=".notice.NoticeDetailsActivity"></activity>
+        <activity android:name=".controller.study.StudyDetailsActivity" />
+        <activity android:name=".controller.notice.NoticeDetailsActivity"></activity>
     </application>
 
 </manifest>

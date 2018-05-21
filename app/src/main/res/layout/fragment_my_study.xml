@@ -3,33 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".myStudy.MyStudyFragment">
+    tools:context=".controller.myStudy.MyStudyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#d9d9d9"
-        android:id="@+id/mystudy_layout"
-        >
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#d9d9d9"-->
+        <!--android:id="@+id/mystudy_layout"-->
+        <!--&gt;-->
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/mystudy_recyclerview"
-            >
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            android:id="@+id/mystudy_recyclerview" />
 
-        </android.support.v7.widget.RecyclerView>
-
-
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnTest"
         android:text="스터디 상세정보 화면 테스트"
-        android:layout_marginTop="30dp"
-        />
+        android:layout_marginTop="30dp" />
 
 </FrameLayout>

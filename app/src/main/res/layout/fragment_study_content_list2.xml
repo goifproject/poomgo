@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_half_margin"
+        android:layout_marginTop="@dimen/default_half_margin"
+        android:layout_marginEnd="@dimen/default_half_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/study_region_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+            android:text="@string/study_district_list_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/default_text_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/study_region_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/study_region_list_text"
+            tools:itemCount="6"
+            tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:listitem="@layout/item_region_list"
+            tools:spanCount="3" />
+
+        <TextView
+            android:id="@+id/study_region_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="@string/more_item_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_half_margin"
+        android:layout_marginTop="@dimen/default_half_margin"
+        android:layout_marginEnd="@dimen/default_half_margin"
+        android:layout_marginBottom="@dimen/default_half_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/study_category_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+            android:text="@string/study_category_list_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/default_text_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/study_category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/study_category_list_text"
+            android:orientation="vertical"
+            tools:itemCount="3"
+            tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category" />
+
+        <TextView
+            android:id="@+id/study_category_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="@string/more_item_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>
