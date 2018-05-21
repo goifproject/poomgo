@@ -17,9 +17,9 @@ import android.widget.EditText;
 
 import kr.co.teaming.www.teaming.R;
 import kr.co.teaming.www.teaming.controller.matching.main.MatchingFragment;
-import kr.co.teaming.www.teaming.controller.message.MessageFragment;
-import kr.co.teaming.www.teaming.controller.myStudy.MyStudyFragment;
-import kr.co.teaming.www.teaming.controller.notice.NoticeFragment;
+import kr.co.teaming.www.teaming.controller.message.main.MessageFragment;
+import kr.co.teaming.www.teaming.controller.myStudy.main.MyStudyFragment;
+import kr.co.teaming.www.teaming.controller.notice.main.NoticeFragment;
 
 public class MainActivity extends AppCompatActivity implements
         MatchingFragment.OnFragmentInteractionListener,

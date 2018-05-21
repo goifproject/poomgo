@@ -25,8 +25,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".controller.study.detail.StudyDetailActivity" />
-        <activity android:name=".controller.notice.NoticeDetailsActivity" />
-        <activity android:name=".controller.matching.detail.MatchingDetailActivity"></activity>
+        <activity android:name=".controller.notice.detail.NoticeDetailsActivity" />
+        <activity android:name=".controller.matching.detail.MatchingDetailActivity" />
+        <activity android:name=".controller.myStudy.detail.MyStudyDetailActivity" />
+        <activity android:name=".controller.message.detail.MessageDeatilActivity"></activity>
     </application>
 
 </manifest>

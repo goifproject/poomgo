@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controller.notice.detail.NoticeDetailsActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="공지사항 상세페이지"
-        />
+    tools:context=".controller.myStudy.detail.MyStudyDetailActivity">
 
 </android.support.constraint.ConstraintLayout>

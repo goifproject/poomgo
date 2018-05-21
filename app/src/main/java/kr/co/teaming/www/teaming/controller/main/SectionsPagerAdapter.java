@@ -5,9 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import kr.co.teaming.www.teaming.controller.matching.main.MatchingFragment;
-import kr.co.teaming.www.teaming.controller.message.MessageFragment;
-import kr.co.teaming.www.teaming.controller.myStudy.MyStudyFragment;
-import kr.co.teaming.www.teaming.controller.notice.NoticeFragment;
+import kr.co.teaming.www.teaming.controller.message.main.MessageFragment;
+import kr.co.teaming.www.teaming.controller.myStudy.main.MyStudyFragment;
+import kr.co.teaming.www.teaming.controller.notice.main.NoticeFragment;
 import kr.co.teaming.www.teaming.controller.study.main.StudyFragment;
 
 public class SectionsPagerAdapter extends FragmentStatePagerAdapter {

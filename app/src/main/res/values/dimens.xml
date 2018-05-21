@@ -129,8 +129,8 @@
     <!-- 공지사항 탭 -->
 
         <!-- 공지사항 아이콘 -->
-    <dimen name="notice_icon_width">11.4dp</dimen>
-    <dimen name="notice_icon_height">10dp</dimen>
+    <dimen name="notice_icon_width">16dp</dimen>
+    <dimen name="notice_icon_height">16dp</dimen>
     <dimen name="notice_icon_margin_top">22.5dp</dimen>
     <dimen name="notice_icon_margin_left">25.3dp</dimen>
 

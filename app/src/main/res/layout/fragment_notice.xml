@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:background="#d6d6d6"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
 
-    <ImageView
-        android:background="#000000"
-        android:id="@+id/notice_icon"
-        android:layout_height="@dimen/notice_icon_height"
-        android:layout_marginLeft="@dimen/notice_icon_margin_left"
-        android:layout_marginTop="@dimen/notice_icon_margin_top"
-        android:layout_width="@dimen/notice_icon_width" />
+    <LinearLayout
+        android:id="@+id/notice_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical">
 
-    <TextView
-        android:layout_height="@dimen/notice_text_title_height"
-        android:layout_marginLeft="@dimen/notice_text_title_margin_left"
-        android:layout_marginTop="@dimen/notice_text_title_margin_top"
-        android:layout_width="@dimen/notice_text_title_width"
-        android:text="@string/notice_text_title"
-        android:textSize="@dimen/notice_text_size" />
+        <ImageView
+            android:id="@+id/notice_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@drawable/ic_notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/notice_icon"
+            android:text="공지사항"
+            android:textColor="@color/color_text_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/fragment_notice_recyclerview"
-        android:layout_below="@+id/notice_icon"
+        android:id="@+id/noticeRecyclerView"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/notice_recyclerview_margin_top"
-        android:layout_width="match_parent">
+        android:layout_below="@+id/notice_title_layout">
 
     </android.support.v7.widget.RecyclerView>
 

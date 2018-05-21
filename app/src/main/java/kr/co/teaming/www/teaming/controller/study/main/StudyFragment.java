@@ -75,7 +75,6 @@ public class StudyFragment extends Fragment {
         studySearchInput = (EditText) view.findViewById(R.id.study_search_input);
     }
 
-
     private void setFavoriteRecycler() {
         favoriteListAdapter = new StudyFavoriteListAdapter();
         favoriteStudyRecyclerView.setAdapter(favoriteListAdapter);
