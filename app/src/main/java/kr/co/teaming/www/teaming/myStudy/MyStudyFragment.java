@@ -4,14 +4,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import kr.co.teaming.www.teaming.R;
-import kr.co.teaming.www.teaming.StudyDetailsActivity;
+import kr.co.teaming.www.teaming.notice.NoticeFragmentAdapter;
 
 
 /**
@@ -27,6 +30,15 @@ public class MyStudyFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    RecyclerView ListrecyclerView;
+    RecyclerView.LayoutManager ListlayoutManager;
+
+    MyStudyFragmentAdapter adapter;
+
+    RecyclerView ListingRecyclerView;
+    RecyclerView.LayoutManager ListingLayoutManager;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -71,15 +83,38 @@ public class MyStudyFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_my_study, container, false);
 
-        Button btnTest = view.findViewById(R.id.btnTest);
+        adapter = new MyStudyFragmentAdapter();
 
-        btnTest.setOnClickListener(new View.OnClickListener() {
+        ListrecyclerView = view.findViewById(R.id.mystudy_list_recyclerview);
+        ListlayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+
+        ListrecyclerView.setLayoutManager(ListlayoutManager);
+        ListrecyclerView.setAdapter(adapter);
+
+
+        ListingRecyclerView = view.findViewById(R.id.mystudy_listing_recycler);
+        ListingLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+
+        ListingRecyclerView.setLayoutManager(ListingLayoutManager);
+        ListingRecyclerView.setAdapter(adapter);
+
+        adapter.setItemClick(new NoticeFragmentAdapter.ItemClick() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), StudyDetailsActivity.class);
+            public void onClick(View view, int position) {
+
+                Intent intent = new Intent(getActivity(), MyStudyDetailsActivity.class);
                 startActivity(intent);
             }
         });
+
+//        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         // Inflate the layout for this fragment
         return view;

@@ -56,9 +56,9 @@ public class NoticeFragmentAdapter extends RecyclerView.Adapter <RecyclerView.Vi
 
     public NoticeFragmentAdapter() {
 
-        noticeRecyclerView.setNoticeStudyName("영어");
+        noticeRecyclerView.setNoticeStudyName("이것은 테스트 입니다. 이곳은 스터디 이름입니다.");
         noticeRecyclerView.setNoticeDate("2018/02/02");
-        noticeRecyclerView.setNoticeContext("안녕하세요");
+        noticeRecyclerView.setNoticeContext("이것은 테스트 입니다. 이 자리는 스터디 공지사항에 대한 정보를 올리는 곳입니다.");
 
         noticeData.add(noticeRecyclerView);
     }
