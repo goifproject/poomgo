@@ -145,9 +145,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/default_half_margin"
                 android:layout_marginEnd="@dimen/default_half_margin"
-                />
+            />
 
+            <include
+                layout="@layout/fragment_study_main"
+                />
         </LinearLayout>
+
 
     </ScrollView>
 
