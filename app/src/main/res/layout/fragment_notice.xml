@@ -26,11 +26,13 @@
         
         <TextView
             android:layout_width="@dimen/notice_text_title_width"
-            android:layout_height="@dimen/notice_text_title_height"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/notice_text_title_margin_left"
             android:layout_marginTop="@dimen/notice_text_title_margin_top"
             android:text="@string/notice_text_title"
             android:textSize="@dimen/notice_text_size"
+            android:fontFamily="@font/noto_sans_font"
+            android:id="@+id/notice_text_title"
             />
 
     <!-- TODO: Update blank fragment layout -->
@@ -39,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fragment_notice_recyclerview"
-        android:layout_below="@+id/notice_icon"
+        android:layout_below="@+id/notice_text_title"
         android:layout_marginTop="@dimen/notice_recyclerview_margin_top"
         >
 
