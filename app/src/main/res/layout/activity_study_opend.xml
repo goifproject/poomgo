@@ -19,12 +19,14 @@
         android:layout_marginRight="16dp"
         >
 
-        <ImageView
+        <Button
             android:layout_width="93dp"
             android:layout_height="93dp"
             android:layout_marginTop="23dp"
-            android:src="@drawable/testimage"
-            android:background="@drawable/layout_background_round"
+            android:background="@drawable/layout_background_round_other_color"
+            android:hint="사진을 입력해주세요."
+            android:textSize="10sp"
+            style="?android:attr/borderlessButtonStyle"
             />
         
         <EditText
@@ -97,7 +99,7 @@
             />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="스터디 기간"
                 android:layout_marginLeft="5dp"
@@ -112,10 +114,11 @@
                 android:layout_height="11dp"
                 android:background="#dddddd"
                 android:layout_gravity="center"
+
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="지역 설정"
                 android:layout_marginLeft="5dp"
@@ -133,7 +136,7 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="분야 설정"
                 android:layout_marginLeft="5dp"
@@ -151,7 +154,7 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="시간 설정"
                 android:layout_marginLeft="5dp"
@@ -170,7 +173,7 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="연령 설정"
                 android:layout_marginLeft="5dp"
@@ -189,7 +192,7 @@
                 />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="19dp"
                 android:hint="인원 설정"
                 android:layout_marginLeft="5dp"
