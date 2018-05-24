@@ -50,6 +50,7 @@
                     android:fontFamily="@font/noto_sans_font"
                     android:maxLines="2"
                     android:ellipsize="end"
+                    android:textColor="@color/textTitleColor"
                     />
 
                 <TextView
@@ -90,6 +91,7 @@
                     android:text="@string/study_introduce_title"
                     android:textSize="@dimen/study_introduce_title_text_size"
                     android:fontFamily="@font/noto_sans_font"
+                    android:textColor="@color/textTitleColor"
                     />
 
                 <TextView
@@ -113,6 +115,7 @@
                     android:text="@string/study_info_title"
                     android:textSize="@dimen/study_introduce_text_size"
                     android:fontFamily="@font/noto_sans_font"
+                    android:textColor="@color/textTitleColor"
                     />
 
                 <GridLayout
