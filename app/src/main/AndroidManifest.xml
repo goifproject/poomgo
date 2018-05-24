@@ -26,7 +26,8 @@
         </activity>
         <activity android:name=".StudyDetailsActivity" />
         <activity android:name=".notice.NoticeDetailsActivity" />
-        <activity android:name=".myStudy.MyStudyDetailsActivity"></activity>
+        <activity android:name=".myStudy.MyStudyDetailsActivity" />
+        <activity android:name=".StudyOpendActivity"></activity>
     </application>
 
 </manifest>

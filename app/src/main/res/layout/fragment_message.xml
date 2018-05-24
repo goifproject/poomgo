@@ -19,4 +19,12 @@
         android:id="@+id/btnMessage"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="스터디방 개설 페이지 이동"
+        android:id="@+id/btn_study_opened"
+        />
+
 </FrameLayout>

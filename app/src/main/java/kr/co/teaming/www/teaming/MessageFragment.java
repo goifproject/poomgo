@@ -78,6 +78,16 @@ public class MessageFragment extends Fragment {
             }
         });
 
+        Button btn_study_opened = view.findViewById(R.id.btn_study_opened);
+
+        btn_study_opened.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), StudyOpendActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return view;
     }

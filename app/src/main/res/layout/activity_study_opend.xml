@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyOpendActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <ImageView
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/testimage"
+            android:background="@drawable/layout_background_round"
+            />
+        
+        <EditText
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:layout_marginLeft="109dp"
+            android:textSize="16sp"
+            android:hint="스터디 제목을 입력하세요"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="109dp"
+            android:textSize="12sp"
+            android:hint="모집기간을 설정하세요">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="146dp"
+            android:text="스터디 소개"
+            android:textColor="@color/textTitleColor"
+            android:textSize="13sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="179dp"
+            android:background="@drawable/layout_background_round_other_color">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:hint="소개글을 입력하세요"
+                android:gravity="top"
+                android:maxLines="16"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="561dp"
+            android:textSize="13sp"
+            android:text="상세정보"
+            android:textColor="@color/textTitleColor"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="595dp"
+            android:columnCount="2"
+            >
+
+            <ImageView
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:background="#dddddd"
+            android:layout_gravity="center"
+            />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="스터디 기간"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="지역 설정"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="분야 설정"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="시간 설정"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="연령 설정"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:hint="인원 설정"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                />
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="735dp"
+            android:background="@color/section_line_color"
+            >
+        </View>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="755dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="등록하기"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

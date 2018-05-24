@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#813d32</color>
     <color name="colorAccent">#52afb5</color>
     <color name="backgroundColor">#f2f2f2</color>
+    <color name="textTitleColor">#813d32</color>
 
     <!-- 스터디 상세정보 화면 -->
 
