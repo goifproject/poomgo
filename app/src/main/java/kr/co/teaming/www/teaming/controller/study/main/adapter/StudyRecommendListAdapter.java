@@ -11,7 +11,7 @@ public class StudyRecommendListAdapter extends RecyclerView.Adapter<StudyRecomme
 
     @Override
     public StudyRecommendListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_study_clip, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_study_clip, parent, false);
         return new ViewHolder(view);
     }
 

@@ -8,24 +8,26 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import kr.co.teaming.www.teaming.R;
+import kr.co.teaming.www.teaming.controller.study.main.StudyFragment;
+import kr.co.teaming.www.teaming.model.study.study.Study;
 
 public class StudyByCategoryListAdapter extends RecyclerView.Adapter<StudyByCategoryListAdapter.ViewHolder> {
 
-    private Context mContext;
+    private StudyFragment studyFragment;
     private String[] categoryArray;
 
-    public StudyByCategoryListAdapter(Context mContext) {
-        this.mContext = mContext;
+    public StudyByCategoryListAdapter(StudyFragment studyFragment) {
+        this.studyFragment = studyFragment;
         prepareData();
     }
 
     private void prepareData() {
-        categoryArray = mContext.getResources().getStringArray(R.array.category_k);
+        categoryArray = studyFragment.getResources().getStringArray(R.array.category_k);
     }
 
     @Override
     public StudyByCategoryListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_category, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_category, parent, false);
         return new StudyByCategoryListAdapter.ViewHolder(view);
     }
 
@@ -45,7 +47,13 @@ public class StudyByCategoryListAdapter extends RecyclerView.Adapter<StudyByCate
 
         public ViewHolder(View itemView) {
             super(itemView);
-            categoryText = itemView.findViewById(R.id.category_text);
+            categoryText = itemView.findViewById(R.id.item_category_text);
+            categoryText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    studyFragment.switchView();
+                }
+            });
         }
     }
 }

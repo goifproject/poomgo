@@ -5,11 +5,12 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/category_text"
+        android:id="@+id/item_dialog_sub_filter_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="@dimen/study_list2_margin_start"
-        android:paddingBottom="@dimen/study_item_list2_padding"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="@dimen/study_item_list2_padding"
         android:text="dummy"
         android:textColor="@color/color_text_dark" />
 

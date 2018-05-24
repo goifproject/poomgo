@@ -15,7 +15,7 @@ public class MatchingFavoriteListAdapter extends RecyclerView.Adapter<MatchingFa
 
     @Override
     public MatchingFavoriteListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_matching_clip, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_matching_clip, parent, false);
         return new ViewHolder(view);
     }
 

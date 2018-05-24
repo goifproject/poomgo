@@ -25,7 +25,7 @@ public class MatchingByCategoryListAdapter extends RecyclerView.Adapter<Matching
 
     @Override
     public MatchingByCategoryListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_category, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_category, parent, false);
         return new MatchingByCategoryListAdapter.ViewHolder(view);
     }
 
@@ -45,7 +45,7 @@ public class MatchingByCategoryListAdapter extends RecyclerView.Adapter<Matching
 
         public ViewHolder(View itemView) {
             super(itemView);
-            categoryText = itemView.findViewById(R.id.category_text);
+            categoryText = itemView.findViewById(R.id.item_category_text);
         }
     }
 }

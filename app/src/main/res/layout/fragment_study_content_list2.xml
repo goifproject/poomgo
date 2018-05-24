@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_study_content_list2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/backgroundColor"
@@ -33,7 +34,7 @@
             android:layout_below="@+id/study_region_list_text"
             tools:itemCount="7"
             tools:layoutManager="android.support.v7.widget.GridLayoutManager"
-            tools:listitem="@layout/item_region"
+            tools:listitem="@layout/item_main_region"
             tools:spanCount="3" />
 
         <TextView
@@ -76,7 +77,7 @@
             android:orientation="vertical"
             tools:itemCount="3"
             tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_category" />
+            tools:listitem="@layout/item_main_category" />
 
         <TextView
             android:id="@+id/study_category_more_item"

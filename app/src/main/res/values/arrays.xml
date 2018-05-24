@@ -35,6 +35,15 @@
         <item>자격증</item>
     </string-array>
 
+    <string-array name="time_k">
+    </string-array>
+
+    <string-array name="age_k">
+    </string-array>
+
+    <string-array name="count_k">
+    </string-array>
+
     <string-array name="region">
         <!--서울특별시-->
         <item>seoul</item>
@@ -107,6 +116,81 @@
         <item>경남</item>
         <!--제주특별자치도-->
         <item>제주</item>
+    </string-array>
+
+    <string-array name="sub_seoul">
+        <item>강남/역삼/삼성/논현</item>
+        <item>서초/방배/신사</item>
+        <item>잠실/신천</item>
+        <item>천호/길동/둔촌</item>
+        <item>구로/영등포/여의도/목동</item>
+        <item>신림/서울대사당/금천/동작</item>
+        <item>강서/화곡/까치산/양천</item>
+        <item>신촌/홍대/합정</item>
+        <item>연신내/불광/응암</item>
+        <item>종로/대학로</item>
+        <item>성신여대/성북/월곡</item>
+    </string-array>
+
+    <string-array name="sub_busan">
+    </string-array>
+
+    <string-array name="sub_daegu">
+    </string-array>
+
+    <string-array name="sub_incheon">
+    </string-array>
+
+    <string-array name="sub_gwangju">
+    </string-array>
+
+    <string-array name="sub_daejeon">
+    </string-array>
+
+    <string-array name="sub_ulsan">
+    </string-array>
+
+    <string-array name="sub_sejong">
+    </string-array>
+
+    <string-array name="sub_gyeonggi">
+    </string-array>
+
+    <string-array name="sub_gangwon">
+    </string-array>
+
+    <string-array name="sub_choongbuk">
+    </string-array>
+
+    <string-array name="sub_choongnam">
+    </string-array>
+
+    <string-array name="sub_jeonbuk">
+    </string-array>
+
+    <string-array name="sub_jeonnam">
+    </string-array>
+
+    <string-array name="sub_gyeongbuk">
+    </string-array>
+
+    <string-array name="sub_gyeongnam">
+    </string-array>
+
+    <string-array name="sub_jeju">
+    </string-array>
+
+    <string-array name="study_category">
+        <item>지역별</item>
+        <item>분야별</item>
+        <item>시간별</item>
+        <item>나이별</item>
+        <item>인원별</item>
+    </string-array>
+
+    <string-array name="matching_category">
+        <item>지역별</item>
+        <item>분야별</item>
     </string-array>
 
 </resources>

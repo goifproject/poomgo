@@ -8,25 +8,25 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import kr.co.teaming.www.teaming.R;
+import kr.co.teaming.www.teaming.controller.study.main.StudyFragment;
 
 public class StudyByRegionListAdapter extends RecyclerView.Adapter<StudyByRegionListAdapter.ViewHolder> {
 
-    private Context mContext;
+    private StudyFragment studyFragment;
     private String[] regionArray;
 
-    public StudyByRegionListAdapter(Context mContext) {
-        this.mContext = mContext;
+    public StudyByRegionListAdapter(StudyFragment studyFragment) {
+        this.studyFragment = studyFragment;
         prepareData();
     }
 
     private void prepareData() {
-        regionArray = mContext.getResources().getStringArray(R.array.region_k);
+        regionArray = studyFragment.getResources().getStringArray(R.array.region_k);
     }
-
 
     @Override
     public StudyByRegionListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_region, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_region, parent, false);
         return new StudyByRegionListAdapter.ViewHolder(view);
     }
 
@@ -46,7 +46,13 @@ public class StudyByRegionListAdapter extends RecyclerView.Adapter<StudyByRegion
 
         public ViewHolder(View itemView) {
             super(itemView);
-            regionText = itemView.findViewById(R.id.region_text);
+            regionText = itemView.findViewById(R.id.item_region_text);
+            regionText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    studyFragment.switchView();
+                }
+            });
         }
 
     }

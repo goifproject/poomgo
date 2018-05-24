@@ -26,7 +26,7 @@ public class MatchingByRegionListAdapter extends RecyclerView.Adapter<MatchingBy
 
     @Override
     public MatchingByRegionListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_region, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_region, parent, false);
         return new MatchingByRegionListAdapter.ViewHolder(view);
     }
 
@@ -46,7 +46,7 @@ public class MatchingByRegionListAdapter extends RecyclerView.Adapter<MatchingBy
 
         public ViewHolder(View itemView) {
             super(itemView);
-            regionText = itemView.findViewById(R.id.region_text);
+            regionText = itemView.findViewById(R.id.item_region_text);
         }
 
     }

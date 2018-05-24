@@ -15,21 +15,21 @@ public class ScrollAwareFabBehavior extends FloatingActionButton.Behavior {
         super();
     }
 
-//    @Override
-//    public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull FloatingActionButton child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
-//
-//        return axes == ViewCompat.SCROLL_AXIS_VERTICAL || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target, axes, type);
-//    }
-//
-//    @Override
-//    public void onNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull FloatingActionButton child, @NonNull View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, int type) {
-//        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type);
-//        if(dyConsumed > 0 && child.getVisibility() == View.VISIBLE) {
-//            child.hide();
-//        } else if (dyConsumed < 0 && child.getVisibility() != View.VISIBLE) {
-//            child.show();
-//        }
-//    }
+    @Override
+    public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull FloatingActionButton child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
+
+        return axes == ViewCompat.SCROLL_AXIS_VERTICAL || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild, target, axes, type);
+    }
+
+    @Override
+    public void onNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull FloatingActionButton child, @NonNull View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, int type) {
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type);
+        if(dyConsumed > 0 && child.getVisibility() == View.VISIBLE) {
+            child.hide();
+        } else if (dyConsumed < 0 && child.getVisibility() != View.VISIBLE) {
+            child.show();
+        }
+    }
 
 //    @Override
 //    public boolean onStartNestedScroll(final CoordinatorLayout coordinatorLayout, final FloatingActionButton child, final View directTargetChild, final View target, final int nestedScrollAxes) {
@@ -50,21 +50,21 @@ public class ScrollAwareFabBehavior extends FloatingActionButton.Behavior {
 //        }
 //    }
 
-    @Override
-    public void onNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
-
-        //child -> Floating Action Button
-        if (child.getVisibility() == View.VISIBLE && dyConsumed > 0) {
-            child.hide();
-        } else if (child.getVisibility() == View.GONE && dyConsumed < 0) {
-            child.show();
-        }
-    }
-
-    @Override
-    public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View directTargetChild, View target, int nestedScrollAxes) {
-        return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL;
-    }
+//    @Override
+//    public void onNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
+//        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
+//
+//        //child -> Floating Action Button
+//        if (child.getVisibility() == View.VISIBLE && dyConsumed > 0) {
+//            child.hide();
+//        } else if (child.getVisibility() == View.GONE && dyConsumed < 0) {
+//            child.show();
+//        }
+//    }
+//
+//    @Override
+//    public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View directTargetChild, View target, int nestedScrollAxes) {
+//        return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL;
+//    }
 
 }

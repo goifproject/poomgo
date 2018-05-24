@@ -56,4 +56,7 @@
     <string name="matching_district_list_text">지역별 팀원</string>
     <string name="matching_category_list_text">분야별 팀원</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

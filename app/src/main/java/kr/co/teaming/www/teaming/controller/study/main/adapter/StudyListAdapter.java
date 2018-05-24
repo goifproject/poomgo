@@ -9,18 +9,17 @@ import android.view.ViewGroup;
 import kr.co.teaming.www.teaming.R;
 import kr.co.teaming.www.teaming.controller.study.detail.StudyDetailActivity;
 
-public class StudyFavoriteListAdapter extends RecyclerView.Adapter<StudyFavoriteListAdapter.ViewHolder> {
-
+public class StudyListAdapter extends RecyclerView.Adapter<StudyListAdapter.ViewHolder> {
 
 
     @Override
-    public StudyFavoriteListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_study_clip, parent, false);
+    public StudyListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main_study_list, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(StudyFavoriteListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(StudyListAdapter.ViewHolder holder, int position) {
 
     }
 

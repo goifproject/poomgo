@@ -13,7 +13,7 @@
         android:fillViewport="true"
         android:scrollbars="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -21,13 +21,34 @@
             android:orientation="vertical"
             tools:context=".controller.study.main.StudyFragment">
 
-            <include layout="@layout/fragment_study_content_search" />
+            <include
+                android:id="@+id/include_study_search"
+                layout="@layout/fragment_study_content_search" />
 
-            <include layout="@layout/fragment_study_content_list1" />
+            <include
+                android:id="@+id/include_study_list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_study_search"
+                layout="@layout/fragment_study_content_list1" />
 
-            <include layout="@layout/fragment_study_content_list2" />
+            <include
+                android:id="@+id/include_study_list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_study_list1"
+                layout="@layout/fragment_study_content_list2" />
 
-        </LinearLayout>
+            <include
+                android:id="@+id/include_study_list3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/include_study_search"
+                android:visibility="gone"
+                layout="@layout/fragment_study_content_list3" />
+
+
+        </RelativeLayout>
 
     </android.support.v4.widget.NestedScrollView>
 

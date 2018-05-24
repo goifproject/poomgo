@@ -33,7 +33,7 @@
             android:layout_below="@+id/matching_region_list_text"
             tools:itemCount="7"
             tools:layoutManager="android.support.v7.widget.GridLayoutManager"
-            tools:listitem="@layout/item_region"
+            tools:listitem="@layout/item_main_region"
             tools:spanCount="3" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:orientation="vertical"
             tools:itemCount="3"
             tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_category" />
+            tools:listitem="@layout/item_main_category" />
 
         <TextView
             android:id="@+id/matching_category_more_item"

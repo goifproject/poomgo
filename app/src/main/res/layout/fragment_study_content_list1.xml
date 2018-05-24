@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/layout_study_content_list1"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -39,8 +40,9 @@
                 android:layout_marginBottom="@dimen/default_margin"
                 android:orientation="horizontal"
                 tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_study_clip"
-                tools:orientation="horizontal" />
+                tools:listitem="@layout/item_main_study_clip"
+                tools:orientation="horizontal"
+                android:overScrollMode="never" />
 
         </LinearLayout>
 
@@ -69,8 +71,9 @@
                 android:layout_marginBottom="@dimen/default_margin"
                 android:orientation="horizontal"
                 tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_study_clip"
-                tools:orientation="horizontal" />
+                tools:listitem="@layout/item_main_study_clip"
+                tools:orientation="horizontal"
+                android:overScrollMode="never" />
 
         </LinearLayout>
 
