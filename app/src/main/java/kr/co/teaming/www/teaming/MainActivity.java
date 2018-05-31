@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import kr.co.teaming.www.teaming.common.TeamingApplication;
 import kr.co.teaming.www.teaming.common.TeamingRESTInterface;
+import kr.co.teaming.www.teaming.matching.MatchingFragment;
 import kr.co.teaming.www.teaming.models.StudyInfo;
 import kr.co.teaming.www.teaming.myStudy.MyStudyFragment;
 import kr.co.teaming.www.teaming.notice.NoticeFragment;
