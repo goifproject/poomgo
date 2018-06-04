@@ -50,10 +50,12 @@
 
     <!-- 팀원 -->
     <string name="matching_search_text">팀원 검색</string>
-    <string name="matching_wish_text">찜한 팀원</string>
+    <string name="matching_clip_text">찜한 팀원</string>
     <string name="matching_recommend_text">추천 팀원</string>
     <string name="matching_member_name_text">김연아 (27, 여)</string>
     <string name="matching_member_address_text">서울 강남구, 웹 디자이너</string>
+    <string name="matching_region_text">지역별 팀원</string>
+    <string name="matching_field_text">분야별 팀원</string>
 
 <!-- **************************************************************************************** -->
     <!-- 공지사항 탭 -->

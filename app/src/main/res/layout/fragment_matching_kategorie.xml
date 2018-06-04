@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_half_margin"
+        android:layout_marginTop="@dimen/default_half_margin"
+        android:layout_marginEnd="@dimen/default_half_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/matching_region_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+            android:text="@string/matching_region_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/default_text_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/matching_region_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/matching_region_text"
+            android:layout_marginStart="@dimen/matching_kategorie_margin_start"
+            android:layout_marginEnd="@dimen/default_margin"
+            tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:itemCount="9"
+            tools:spanCount="3" />
+
+        <TextView
+            android:id="@+id/matching_region_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="@string/more_item_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_half_margin"
+        android:layout_marginTop="@dimen/default_half_margin"
+        android:layout_marginEnd="@dimen/default_half_margin"
+        android:layout_marginBottom="@dimen/default_half_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/matching_field_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginBottom="@dimen/study_list_text_margin_bottom"
+            android:text="@string/matching_field_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/default_text_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/matching_field_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/matching_field_text"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/matching_kategorie_margin_start"
+            android:layout_marginEnd="@dimen/default_margin"
+            tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:itemCount="3" />
+
+        <TextView
+            android:id="@+id/matching_category_more_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/study_list_text_margin_top"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:text="@string/more_item_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>
