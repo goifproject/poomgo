@@ -11,4 +11,8 @@
     <color name="section_line_color">#d9d9d9</color>
     <color name="study_apply_btn_text_color">#ffffff</color>
 
+    <!-- 기본 텍스트 -->
+    <color name="color_text_dark">#000000</color>
+    <color name="color_text_white">#ffffff</color>
+
 </resources>

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MatchingFragment">
+    android:fillViewport="true"
+    android:scrollbars="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tab_text_2" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="@dimen/default_small_margin"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <include layout="@layout/fragment_matching_search" />
+        <include layout="@layout/fragment_matching_member" />
+        <include layout="@layout/fragment_matching_kategorie" />
+
+
+    </LinearLayout>
+</ScrollView>
