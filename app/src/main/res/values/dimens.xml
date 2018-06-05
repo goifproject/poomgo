@@ -102,7 +102,7 @@
         <!-- '공지사항' 글자 -->
     <dimen name="notice_text_title_width">65dp</dimen>
     <dimen name="notice_text_title_height">24dp</dimen>
-    <dimen name="notice_text_title_margin_top">5dp</dimen>
+    <dimen name="notice_text_title_margin_top">10dp</dimen>
     <dimen name="notice_text_title_margin_left">46dp</dimen>
     <dimen name="notice_text_size">15sp</dimen>
 
@@ -121,18 +121,18 @@
         <!-- 리싸이클러뷰 아이템 스터디 이름 텍스트 -->
 
     <dimen name="notice_recyclerview_item_study_name_text_margin">13dp</dimen>
-    <dimen name="notice_recyclerview_item_study_name_text_size">14sp</dimen>
+    <dimen name="notice_recyclerview_item_study_name_text_size">16sp</dimen>
 
         <!-- 리싸이클러뷰 아이템 시간/날짜 텍스트 -->
 
     <dimen name="notice_recyclerview_item_date_text_margin">13dp</dimen>
-    <dimen name="notice_recyclerview_item_date_text_size">12sp</dimen>
+    <dimen name="notice_recyclerview_item_date_text_size">14sp</dimen>
 
         <!-- 리싸이클러뷰 아이템 공지내용 텍스트 -->
 
     <dimen name="notice_recyclerview_item_context_text_margin">13dp</dimen>
     <dimen name="notice_recyclerview_item_context_text_margin_top">38dp</dimen>
-    <dimen name="notice_recyclerview_item_context_text_size">11sp</dimen>
+    <dimen name="notice_recyclerview_item_context_text_size">13sp</dimen>
 
 <!-- **************************************************************************************** -->
 

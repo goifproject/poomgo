@@ -7,7 +7,9 @@ public class NoticeInfo implements Serializable {
 
     public int total;
 
-    public ArrayList<NoticeData> noticeData = new ArrayList<>();
+    public Result result = new Result();
+
+    public ArrayList<NoticeData> data = new ArrayList<>();
 
     public class NoticeData{
         public String notice;

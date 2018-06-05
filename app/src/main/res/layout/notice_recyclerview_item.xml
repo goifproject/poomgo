@@ -23,7 +23,6 @@
             android:layout_marginTop="@dimen/notice_recyclerview_item_study_name_text_margin"
             android:maxLines="1"
             android:ellipsize="end"
-            android:fontFamily="@font/noto_sans_font"
             />
 
         <TextView
@@ -35,7 +34,6 @@
             android:textSize="@dimen/notice_recyclerview_item_date_text_size"
             android:layout_marginTop="@dimen/notice_recyclerview_item_date_text_margin"
             android:layout_marginRight="@dimen/notice_recyclerview_item_date_text_margin"
-            android:fontFamily="@font/noto_sans_font"
             />
 
         <TextView
@@ -49,7 +47,6 @@
             android:id="@+id/notice_context"
             android:layout_marginLeft="@dimen/notice_recyclerview_item_context_text_margin"
             android:layout_marginRight="@dimen/notice_recyclerview_item_context_text_margin"
-            android:fontFamily="@font/noto_sans_font"
             />
 
     </RelativeLayout>

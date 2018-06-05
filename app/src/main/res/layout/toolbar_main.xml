@@ -8,6 +8,7 @@
     app:layout_scrollFlags="scroll|enterAlways"
     app:popupTheme="@style/AppTheme.PopupOverlay"
     app:title="@string/app_name"
+    app:contentInsetLeft="0dp"
     >
 
     <RelativeLayout
@@ -28,6 +29,7 @@
             android:layout_height="@dimen/toolbar_icon_size"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:foreground="?attr/selectableItemBackground"
             />
 
     </RelativeLayout>

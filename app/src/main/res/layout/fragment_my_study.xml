@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="12dp"
                 android:layout_height="13.5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="24dp"
                 android:background="#963232"
                 />
@@ -31,11 +31,11 @@
             <TextView
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginLeft="46dp"
                 android:text="마이스터디 리스트"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/noto_sans_font"
+                android:textSize="15dp"
                 />
 
 
@@ -68,7 +68,7 @@
             <ImageView
                 android:layout_width="12dp"
                 android:layout_height="13.5dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="38dp"
                 android:layout_marginLeft="24dp"
                 android:background="#963232"
                 />
@@ -76,11 +76,11 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="46dp"
                 android:text="신청 중 스터디 리스트"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/noto_sans_font"
+                android:textSize="15sp"
                 />
 
         </RelativeLayout>

@@ -15,7 +15,7 @@ public interface TeamingRESTInterface {
     @GET("/study")
     Call<StudyInfo> studyInfo(); // 하나의 요청에 대한 제이슨
 
-    @GET("/study/3434/notice")
+    @GET("/study/:studyId/notice")
     Call<NoticeInfo> noticeinfo();
 
 }
